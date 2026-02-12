@@ -1,4 +1,4 @@
-# 🧙‍♂️ Merlin: Fakturační systém
+# 🧙‍♂️ Merlin - Fakturační systém
 
 Merlin je moderní desktopová aplikace pro snadnou a rychlou tvorbu faktur, navržená pro živnostníky a malé firmy. Aplikace běží na platformě Electron a nabízí intuitivní uživatelské rozhraní vytvořené v Reactu.
 
