@@ -1,38 +1,38 @@
-# 🧙‍♂️ Merlin - Interní systém
+# Merlin - Interní systém online
 
-Merlin je moderní desktopová aplikace pro snadnou a rychlou tvorbu faktur, navržená pro živnostníky a malé firmy. Aplikace běží na platformě Electron a nabízí intuitivní uživatelské rozhraní vytvořené v Reactu.
+Tato aplikace slouží ke správě faktur a platebních kalendářů.
 
-## ✨ Hlavní funkce
+## Getting Started
 
-- **📝 Tvorba faktur**: Jednoduchý editor pro vytváření a úpravu faktur v reálném čase.
-- **👥 Správa zákazníků**: Ukládání a správa kontaktů pro rychlé doplňování údajů do faktur.
-- **🏢 Firemní profily**: Možnost spravovat více firemních profilů (identit) pro vystavování faktur.
-- **💾 Export do PDF**: Okamžitý tisk nebo uložení faktury do formátu PDF.
-- **📱 QR Platby**: Automatické generování QR kódů pro snadné platby faktur.
-- **🔄 Automatické aktualizace**: Aplikace se sama aktualizuje na nejnovější verzi.
-- **🎨 Přizpůsobení**: Nastavení loga a vzhledu faktury.
+First, run the development server:
 
-## 🛠️ Použité technologie
-
-- **Frontend**: React, Vite
-- **Desktop**: Electron
-- **Další knihovny**: 
-  - `qrcode.react` (QR kódy)
-  - `electron-updater` (aktualizace)
-  - `iban` (validace IBAN)
-
-## 🚀 Jak spustit aplikaci
-
-### Vývojový režim
-Spuštění aplikace v režimu pro vývojáře:
 ```bash
 npm run dev
-# nebo pro spuštění s Electronem:
-npm run electron
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### Sestavení (Build)
-Vytvoření instalátoru pro Windows:
-```bash
-npm run electron:build
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

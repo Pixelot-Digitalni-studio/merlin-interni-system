@@ -1,0 +1,21 @@
+"use client";
+import React from 'react';
+
+const EditIcon = ({ size = 20, color = "currentColor", className = "" }) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            fill={color}
+            width={size}
+            height={size}
+            className={className}
+        >
+            <path opacity=".4" d="M64 128L288 128L288 192L128 192L128 512L448 512L448 352L512 352L512 576L64 576L64 128z" />
+            <path d="M192 448L208 336L399 145L495 241L304 432L192 448zM529 207L433 111L496 48L592 144L529 207z" />
+        </svg>
+    );
+};
+
+export default EditIcon;
+
