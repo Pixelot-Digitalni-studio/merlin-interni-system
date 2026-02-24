@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" href="./fonts/Saira-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Saira';
+      src: url('fonts/Saira-VariableFont_wdth,wght.ttf') format('truetype-variations');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: block;
+    }
+
+    body {
+      background-color: #15141B;
+      margin: 0;
+      font-family: 'Saira', sans-serif;
+      overflow: hidden;
+    }
+
+    #splash-screen {
+      position: fixed;
+      inset: 0 !important;
+      background-color: #15141B !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      z-index: 9999999 !important;
+      transition: opacity 0.3s ease;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .splash-logo-img {
+      width: 202px !important;
+      height: auto !important;
+      margin-bottom: 24px !important;
+      flex: none !important;
+      display: block !important;
+    }
+
+    .splash-loader-track {
+      width: 202px !important;
+      height: 3px !important;
+      background: rgba(255, 255, 255, 0.05) !important;
+      position: relative !important;
+      overflow: hidden !important;
+      flex: none !important;
+      margin: 0 auto !important;
+    }
+
+    .splash-loader-fill {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      height: 3px !important;
+      width: 90px !important;
+      background-color: #875FDC !important;
+      animation: splash-shift 1.5s infinite linear !important;
+    }
+
+    @keyframes splash-shift {
+      0% {
+        transform: translateX(-90px);
+      }
+
+      100% {
+        transform: translateX(202px);
+      }
+    }
+
+    body.loaded #splash-screen {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+  <script>
+    window.hideSplashScreen = () => {
+      document.body.classList.add('loaded');
+    };
+  </script>
+  <title>Merlin - Interní systém</title>
+  <script type="module" crossorigin src="./assets/index-i_Xeul7W.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Cwkn7unq.css">
+</head>
+
+<body>
+  <div id="splash-screen">
+    <img src="./logo/merlin.svg" alt="Merlin" class="splash-logo-img" />
+    <div class="splash-loader-track">
+      <div class="splash-loader-fill"></div>
+    </div>
+  </div>
+  <div id="root"></div>
+</body>
+
+</html>
